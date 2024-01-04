@@ -7,18 +7,18 @@ for (let gradientCount = 0; gradientCount <= 60; gradientCount++) {
     gradient.classList.add("gradient-box")
     gradient.id = `box-${gradientCount}`
 
-    gradient.style.right = `${gradientCount * 2 - 10}%`;
+    gradient.style.right = `${gradientCount * 2 - 15}%`;
     gradient.style.top = `${gradientCount * 2 - 10}%`;
     gradient.style.scale = `${gradientCount * 0.06 + 0.4}`
+    gradient.style.rotate = `${gradientCount * 7 + 10 }deg`
 
     gradient.addEventListener("mouseover", () => {
         gradient.style.top = `${gradientCount * 2 }%`
     })
 
     gradient.addEventListener("mouseout", () => {
-        gradient.style.right = `${gradientCount * 2 - 10}%`;
         gradient.style.top = `${gradientCount * 2 - 10}%`;
-        gradient.style.scale = `${gradientCount * 0.06 + 0.4}`
+
     })
 
     sectionContainer.appendChild(gradient)
