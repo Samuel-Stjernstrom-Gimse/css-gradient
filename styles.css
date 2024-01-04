@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: #353333;
+    margin-left: 10vw;
+    max-height: 100vh;
+
+
+}
+
+
+.gradient-box {
+    width: 25vw;
+    aspect-ratio: 1/1;
+/*    background-image: linear-gradient(to right, turquoise, #c400ff);*/
+    background: url("img/Vector 18.png") no-repeat;
+    background-size: contain;
+    border-radius: 30px;
+    position: absolute;
+    transition: 0.5s;
+    rotate: 0deg;
+
+
+}
+#section-1 {
+    padding: 4%;
+    width: 80vw;
+    max-height: 100vh;
+}
+#section-1 {
+    padding: 4%;
+    width: 80vw;
+    max-height: 100vh;
+}
+
+
+
+
