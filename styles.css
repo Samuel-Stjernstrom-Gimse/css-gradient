@@ -1,40 +1,62 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 body {
     background-color: #353333;
-    margin-left: 10vw;
-    max-height: 100vh;
+    max-height: 120vh;
+}
 
-
+.navbar {
+    width: 100vw;
+    height: 5%;
+    position: fixed;
+    margin: 0;
+    background: #d7d7d7;
+    z-index: 1000;
+    box-shadow: 2px 0 10px #1e1c1c;
+    min-height: 36px;
 }
 
 
 .gradient-box {
     width: 15vw;
     aspect-ratio: 1/1;
-/*    background-image: linear-gradient(to right, turquoise, #c400ff);*/
-    background: url("img/Vector 18.png") no-repeat;
+    /*    background-image: linear-gradient(to right, turquoise, #c400ff);*/
+    background: url("img/Vector 26.png") no-repeat;
     background-size: contain;
     border-radius: 30px;
     position: absolute;
     transition: 0.3s;
-    rotate: 320deg;
+}
+
+.ul-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0.5%;
+    text-align: left;
+    list-style-type: none;
+}
+
+.li-list {
+    padding-left: 10%;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: "Fira Code Retina", serif;
+    font-size: large;
+    padding-right: 10%;
+    width: 25%;
+}
 
 
-}
-#section-1 {
-    padding: 4%;
-    width: 80vw;
-    max-height: 100vh;
-}
-#section-1 {
-    padding: 4%;
-    width: 80vw;
-    max-height: 100vh;
-}
 
 
 
