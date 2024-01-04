@@ -13,15 +13,15 @@ body {
 
 
 .gradient-box {
-    width: 25vw;
+    width: 15vw;
     aspect-ratio: 1/1;
 /*    background-image: linear-gradient(to right, turquoise, #c400ff);*/
     background: url("img/Vector 18.png") no-repeat;
     background-size: contain;
     border-radius: 30px;
     position: absolute;
-    transition: 0.5s;
-    rotate: 0deg;
+    transition: 0.3s;
+    rotate: 320deg;
 
 
 }
