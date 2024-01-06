@@ -20,6 +20,7 @@ function main() {
         gradient.addEventListener("mouseout", () => {
             gradient.style.bottom = `${25 + (Math.cos(gradientCount * 0.2) * gradientCount)}%`;
         });
+        
 
         sectionContainer.appendChild(gradient);
     }
