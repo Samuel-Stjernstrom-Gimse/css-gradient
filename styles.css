@@ -30,12 +30,33 @@ body {
     width: 15vw;
     aspect-ratio: 1/1;
     /*    background-image: linear-gradient(to right, turquoise, #c400ff);*/
-    background: url("img/Vector 26.png") no-repeat;
+    background: url("img/Vector-wi.png") no-repeat;
     background-size: contain;
     border-radius: 30px;
     position: absolute;
     transition: 0.3s;
 }
+
+.gradient-box-p {
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-image: linear-gradient(to right, rgba(0, 253, 235, 0.32), rgba(196, 0, 255, 0.38));
+    border-radius: 30px;
+    position: absolute;
+    transition: 0.3s;;
+}
+/*.gradient-box-p:hover {
+    top: 10%;
+    scale: 1.2;
+    rotate: 45deg;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    position: absolute;
+    opacity: 100%;
+    transition: 0.2s;
+    left: 300%;
+}*/
+
 
 .ul-list {
     display: flex;
@@ -56,7 +77,12 @@ body {
     width: 25%;
 }
 
-
+#text-project-p-1 {
+    font-family: "Fira Code Retina", monospace;
+    rotate: 90deg;
+    font-size: 10px;
+    text-align: center;
+}
 
 
 

@@ -11,7 +11,7 @@ function main() {
         gradient.style.bottom = `${25 + (Math.cos(gradientCount * 0.19) * gradientCount)}%`;
         gradient.style.transform = `scale(1.3)`;
         gradient.style.transformOrigin = "center";
-        gradient.style.rotate = `${gradientCount * 4 + 180}deg`;
+        gradient.style.rotate = `${gradientCount * 3 + 80}deg`;
 
         gradient.addEventListener("mouseover", () => {
             gradient.style.bottom = `${25 + (Math.cos(gradientCount * 0.2) * gradientCount) - 10}%`;
@@ -33,9 +33,9 @@ function main() {
 
         function scaleElement() {
             if (currentIndex < gradientBoxes.length) {
-                gradientBoxes[currentIndex].style.transform = `scale(1.3)`;
+                gradientBoxes[currentIndex].style.transform = `scale(1.1)`;
                 setTimeout(() => {
-                    gradientBoxes[currentIndex].style.transform = shouldGrow ? `scale(1.3)` : `scale(1)`;
+                    gradientBoxes[currentIndex].style.transform = shouldGrow ? `scale(1.1)` : `scale(1)`;
                     if (currentIndex === gradientBoxes.length - 1) {
                         currentIndex = 0; // Reset the index to 0 to start over again
                         shouldGrow = !shouldGrow; // Toggle the shouldGrow variable every time the last element is reached
@@ -43,7 +43,7 @@ function main() {
                         currentIndex++; // Increment the index to go to the next element
                     }
                     scaleElement(); // Call itself recursively for the next element
-                }, 50); // Speed: Change the interval time 50ms
+                }, 80); // Speed: Change the interval time 50ms
             }
         }
 
